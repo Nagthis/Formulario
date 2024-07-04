@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>Registro de Pacientes</h1>
+    <form action="" method="">
+        <table>
+            <tr>
+                <td>Rut:</td>
+                <td><input type="text" name="rut" placeholder="1234567-K"></td>
+            </tr>
+            <tr>
+                <td>Primer Nombre:</td>
+                <td><input type="text" name="primer_nombre" required></td>
+            </tr>
+            <tr>
+                <td>Segundo Nombre:</td>
+                <td><input type="text" name="segundo_nombre"></td>
+            </tr>
+            <tr>
+                <td>Apellido Paterno:</td>
+                <td><input type="" name="apellido_paterno" required></td>
+            </tr>
+            <tr>
+                <td>Apellido Materno:</td>
+                <td><input type="text" name="apellido_materno" required></td>
+            </tr>
+            <tr>
+                <td>Fecha de Nacimiento:</td>
+                <td><input type="date" name="fecha_nacimiento" required></td>
+            </tr>
+            <td>Sexo:</td>
+            <td>
+                <input type="radio" name="sexo" value="M" required> M
+                <input type="radio" name="sexo" value="F" required> F
+            </td>
+            <tr>
+                <td>Correo Electrónico:</td>
+                <td><input type="email" name="correo_electronico" required></td>
+            </tr>
+            <tr>
+                <td>Previsión de salud:</td>
+                <td>
+                    <select name="prevision_salud" required>
+                        <option value="Fonasa">Fonasa</option>
+                        <option value="Isapre">Isapre</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+
+        <h1>Registro de Productos Tecnológicos</h1>
+        <table>
+            <tr>
+                <td>Código:</td>
+                <td><input type="text" name="codigo_producto" required></td>
+            </tr>
+            <tr>
+                <td>Descripción:</td>
+                <td><input type="text" name="descripcion_producto" required></td>
+            </tr>
+            <tr>
+                <td>Clasificación:</td>
+                <td>
+                    <select name="clasificacion_producto" required>
+                        <option value="Computador">Computador</option>
+                        <option value="Tablet">Tablet</option>
+                        <option value="Smartphone">Smartphone</option>
+                        <option value="Smartwatch">Smartwatch</option>
+                        <option value="Impresora">Impresora</option>
+                        <option value="Proyector">Proyector</option>
+                        <option value="Cámara">Cámara</option>
+                        <option value="Audífonos">Audífonos</option>
+                        <option value="Parlante">Parlante</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Marca:</td>
+                <td>
+                    <select name="marca_producto" required>
+                        <option value="Apple">Apple</option>
+                        <option value="Samsung">Samsung</option>
+                        <option value="Huawei">Huawei</option>
+                        <option value="Xiaomi">Xiaomi</option>
+                        <option value="Sony">Sony</option>
+                        <option value="LG">LG</option>
+                        <option value="HP">HP</option>
+                        <option value="Dell">Dell</option>
+                        <option value="Lenovo">Lenovo</option>
+                        <option value="Asus">Asus</option>
+                        <option value="Acer">Acer</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Modelo:</td>
+                <td>
+                    <select name="modelo_producto" required>
+                        <option value="MacBook Pro">MacBook Pro</option>
+                        <option value="Galaxy Tab">Galaxy Tab</option>
+                        <option value="P40 Pro">P40 Pro</option>
+                        <option value="Mi 10">Mi 10</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Stock:</td>
+                <td><input type="number" name="stock_producto" required></td>
+            </tr>
+            <tr>
+                <td>Precio:</td>
+                <td><input type="number" name="precio_producto" required></td>
+            </tr>
+        </table>
+        <h1>Registro de Medicamentos</h1>
+        <table>
+            <tr>
+                <td>Código:</td>
+                <td><input type="text" name="codigo_medicamento" required></td>
+            </tr>
+            <tr>
+                <td>Descripción:</td>
+                <td><input type="text" name="descripcion_medicamento" required></td>
+            </tr>
+            <tr>
+                <td>Laboratorio:</td>
+                <td>
+                    <select name="laboratorio_medicamento" required>
+                        <option value="Pfizer">Pfizer</option>
+                        <option value="AstraZeneca">AstraZeneca</option>
+                        <option value="Moderna">Moderna</option>
+                        <option value="Sinovac">Sinovac</option>
+                        <option value="Laboratorio">Laboratorio de Chile</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <tr>
+                    <td>Presentación:</td>
+                    <td>
+                        <input type="radio" name="presentacion_medicamento" value="Jarabe" required> Jarabe
+                        <input type="radio" name="presentacion_medicamento" value="Tabletas" required> Tabletas
+                        <input type="radio" name="presentacion_medicamento" value="Cápsulas" required> Cápsulas
+                        <input type="radio" name="presentacion_medicamento" value="Inyectable" required> Inyectable
+                        <input type="radio" name="presentacion_medicamento" value="Gotas" required> Gotas
+                    </td>
+                </tr>
+                
+            <tr>
+                <td>Componente activo:</td>
+                <td>
+                    <select name="componente_activo" required>
+                        <option valuSe="Ibuprofeno">Ibuprofeno</option>
+                        <option value="Paracetamol">Paracetamol</option>
+                        <option value="Omeprazol">Omeprazol</option>
+                        <option value="Ranitidina">Ranitidina</option>
+                        <option value="Clonazepam">Clonazepam</option>
+                        <option value="Lorazepam">Lorazepam</option>
+                        <option value="Diazepam">Diazepam</option>
+                        <option value="Alprazolam">Alprazolam</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Cantidad:</td>
+                <td><input type="text" name="cantidad_medicamento" placeholder="ml / unidades" required></td>
+            </tr>
+        </table>
+        <br>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
